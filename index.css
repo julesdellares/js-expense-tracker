@@ -1,0 +1,32 @@
+
+:root {
+    --box-shadow: 0px 1px 4px 1px rgba(190,190,190,1);
+}
+
+body {
+   font-family:Arial, Helvetica, sans-serif; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center
+}
+
+.app h1 {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.balance-container #balance {
+    font-size: 1.5em;
+}
+
+.cashflow-container {
+    display: flex;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: center
+}
+
