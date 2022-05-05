@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>expense tracker</title>
-        <body>
-            <div class="app">
-            <h1> Expense Tracker </h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-               <div>
-
-               </div class="balance-container"> 
-                    <h2>Your Balance</h2>
-                    <div id="balance">
-                        $69 
-                    </div>
-
+<!-- Container for the App -->
+    <div class="app">
+    <h1> Expenses Tracker</h1>
+    <h3> Furry Financial Rehab Services </h3>
+<!-- Shows total balance -->
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+            <div id="balance"> $120 </div>
+        </div>
+<!-- Shows how much money is coming in/out   -->
+<div class="cashflow-container">
+    <div class="income-container">
+        <h2>Income</h2>
+        <div id="income">$1200</div>
+    </div>
+<!-- Money going out -->
+<div class="expense-container">
+    <h2>Expense</h2>
+    <div id="expense">$200</div>
+</div>
+</div>
+<!-- List of money moves -->
+    <div class="transaction-container">
+        <h2> Transaction History </h2>
+        <ul id="transaction">
+            <li>
+                Salary
+                <div>
+                    <span class="income-amt"> $350 </span>
+                    <button> [x] </button>
                 </div>
+            </li>
+            <li>
+                Grocery
+                <div>
+                    <span class="expense-amt"> $45 </span>
+                    <button> [x] </button>
+                </div>
+            </li>
+            <li>
+               Art Materials
+               <div>
+                   <span class="expense-amt"> $20 </span>
+                   <button> [x] </button>
+               </div> 
+            </li>
+        </ul>
+    </div>
+<!-- Add a new money move -->
+    <div class="form-container">
+        <h2> Add New Transaction </h2>
+        <form>
+            <label for="name"> Name </label>
+            <input id="name" type="text">
+            <label for="amount" type="number"> Amount </label>
+            <input id="amount" type="number">
+            <button id="incomeBtn"> Add Income </button>
+            <Button id="expenseBtn"> Add Expense </Button> 
+        </form>
+    </div>
 
-                <div class="cashflow">
-
-                    <div class="income-container">
-                        <h2>income</h2>
-                        <div id="income"> $20 </div>
-                    </div>
-                    
-                    <div class="expense-container">
-                        <h2>expense</h2>
-                        <div id="expense">$10</div>
-                    </div>
-
-                    <div class="transaction-container">
-                        <h2>transaction history</h2>
-                        <ul>
-                            <li>Salary</li>
-                            <li>groceries</li>
-                        </ul>
-                    </div>
-                 
-        </body>
-
-    </head>
-</html>
+</div>
+    </body>
+        </html>

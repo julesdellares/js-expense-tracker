@@ -1,19 +1,22 @@
-
 :root {
-    --box-shadow: 0px 1px 4px 1px rgba(190,190,190,1);
+    --box-shadow: 0px 1px 4px 1px grey;
+    --income: green;
+    --expense: red;
 }
 
+
 body {
-   font-family:Arial, Helvetica, sans-serif; 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .app h1 {
-    text-align: center;
-}
+    text-align: center
+    }
+
 
 h2 {
     text-transform: uppercase;
@@ -21,12 +24,53 @@ h2 {
 
 .balance-container #balance {
     font-size: 1.5em;
+
 }
 
 .cashflow-container {
     display: flex;
     box-shadow: var(--box-shadow);
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
+.income-container {
+    border-right: 1px solid teal ;
+    padding-right: 20px;
+}
+
+.expense-container {
+    padding-left: 20px;
+
+}
+
+#income, #expense {
+    font-size: 1.3em;
+}
+
+#income {
+    color: var(--income);
+}
+
+#expense {
+    color: var(--expense);
+}
+
+#transaction {
+   list-style: none; 
+   margin: 0px;
+   padding:0px;
+}
+
+#transaction li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: var(--box-shadow);
+
+}
