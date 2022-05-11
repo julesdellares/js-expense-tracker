@@ -10,7 +10,7 @@
 <body>
 
 <!-- Container for the App -->
-    <div class="app">
+    <div class="app app-bg">
     <h1> Expenses Tracker</h1>
     <h3> Furry Financial Rehab Services </h3>
 <!-- Shows total balance -->
@@ -34,8 +34,10 @@
     <div class="transaction-container">
         <h2> Transaction History </h2>
         <ul id="transaction">
-            <li>
-                Salary
+         <!--  repalcing this w/ JS  <li>
+
+ replacing the li elements with JS now -->
+                <!-- Salary
                 <div>
                     <span class="income-amt"> $350 </span>
                     <button> [x] </button>
@@ -54,22 +56,25 @@
                    <span class="expense-amt"> $20 </span>
                    <button> [x] </button>
                </div> 
-            </li>
+            </li> -->
+
+
         </ul>
     </div>
 <!-- Add a new money move -->
     <div class="form-container">
         <h2> Add New Transaction </h2>
-        <form>
+        <form onsubmit="return false">
             <label for="name"> Name </label>
             <input id="name" type="text">
             <label for="amount" type="number"> Amount </label>
             <input id="amount" type="number">
-            <button id="incomeBtn"> Add Income </button>
-            <Button id="expenseBtn"> Add Expense </Button> 
+            <button id="incomeBtn" type="submit"> Add Income </button>
+            <button id="expenseBtn" type="submit"> Add Expense </Button> 
         </form>
     </div>
 
 </div>
+<script src="index.js"></script>
     </body>
         </html>
